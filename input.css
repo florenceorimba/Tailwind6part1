@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.box1 {
+    border-top-color: red;
+    border-right-color: black;
+    border-bottom-color: gold;
+    border-left-color: yellowgreen;
+    background-color: lightblue;
+    border-style: solid;
+}
+.first-heading {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box2 { /* Task 1:create a box with different border widths and colors */
+    width: 500px;
+    height: 200px;
+    border-width: 15px; /* Change this value */
+    border-style: double;
+    border-color: black; /* Change color */
+    background-color: #FFF5EE;
+    padding: 60px; /* Task 2: Add padding */
+    margin: 10px; /* Task 3: Adjust margin to space elements properly */
+}
+
+.card { /* Task 5: Create a card-like component with padding margin and a border */
+    border-left: 4px solid #BEBEBE;
+    cursor: pointer;
+    width: 203.6px;
+    height: 136px;
+    margin: 10px;
+    background: linear-gradient(67.75deg, #FFFFFF 19.18%, #FFEBE7 75.31%);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    backdrop-filter: var(--backdrop-blur);
+}
+
+:root {
+    --border: #A9A9A9;
+    --card: #000;
+    --name-black-60: rgba(0, 0, 0, .6);
+    --spacing-6: 24px;
+    --backdrop-blur: 4px;
+    --Border-Black-20: #00000033;
+}
+.card:hover {
+    background-color: #e7e7e7;
+    color: Black;
+}
+
+.order-number {
+    border-color: hsl(var(--border));
+    width: 171.61px;
+}
+
+.number {
+    letter-spacing: -.02em;
+    margin: 0;
+    width: 171.60px;
+}
+
+.name {
+    font-size: 13px;
+    color: var(--name-black-60);
+    border-color: hsl(var(--border));
+    width: 171.60px;
+
+}
+
+    
+.service {
+    font-size: 13px;
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+    width: 171.60px;
+}
+    
+.time {
+    font-size: 13px;
+    color: var(--name-black-60);
+    
+}
